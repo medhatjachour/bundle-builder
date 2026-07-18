@@ -26,7 +26,7 @@ export default function AccordionStep({
 }: Props) {
   return (
     <section className={`bg-[#EDF4FF] overflow-hidden rounded-[24px] border  shadow-sm transition ${isOpen ? 'border-[#4A6CF6]' : 'border-[#E6EAF2]'}`}>
-      <button type="button" onClick={onToggle} className="cursor-pointer flex w-full items-center justify-between px-5 py-4 text-left">
+      <button type="button" onClick={onToggle} aria-expanded={isOpen} className="cursor-pointer flex w-full items-center justify-between px-5 py-4 text-left">
         <div className="flex items-center gap-3">
          
           <div>

@@ -31,6 +31,10 @@ export default function AccordionContainer() {
     setActiveStep((current) => (current === stepNumber ? 0 : stepNumber));
   };
 
+  const handleNext = (stepNumber: number) => {
+    setActiveStep(stepNumber < steps.length ? stepNumber + 1 : 0);
+  };
+
   return (
     <div className="space-y-4 ">
       {steps.map((step, index) => {
@@ -46,7 +50,7 @@ export default function AccordionContainer() {
             isOpen={isOpen}
             selectedCount={selectedCounts[step.category] ?? 0}
             onToggle={() => toggleStep(stepNumber)}
-            onNext={() => setActiveStep(stepNumber + 1)}
+            onNext={() => handleNext(stepNumber)}
             nextLabel={stepNumber < steps.length ? `Next: ${steps[stepNumber].title}` : undefined}
           >
          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-5 3xl:grid-cols-5">

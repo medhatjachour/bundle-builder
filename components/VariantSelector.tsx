@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ProductVariant } from "@/utils/bundle";
 
 type Props = {
@@ -18,6 +19,7 @@ export default function VariantSelector({ variants, active, onSelect }: Props) {
     <div className="flex gap-2 overflow-x-auto pb-1 whitespace-nowrap">
       {variants.map((variant) => {
         const isActive = active === variant.id;
+        const swatchClass = swatchClasses[variant.label.toLowerCase()] ?? 'bg-[#F8FAFC] ring-1 ring-[#CBD5E1]';
         return (
           <button
             key={variant.id}
@@ -26,8 +28,8 @@ export default function VariantSelector({ variants, active, onSelect }: Props) {
             className={`min-w-[100px] cursor-pointer flex items-center gap-2 rounded-md border px-1  py-.5 text-sm font-medium transition ${isActive ? 'border-[#4A6CF6] bg-[#EEF2FF] text-[#2E42B3]' : 'border-[#E2E8F0] bg-white text-[#334155]'}`}
           >
             {variant.image ? (
-              <img src={variant.image} alt={variant.label} className="h-8 w-8 rounded-full object-cover" />
-            ) : <span className="h-8 w-8 rounded-full bg-[#F8FAFC]"></span>}
+              <Image src={variant.image} alt={variant.label} width={32} height={32} className="h-8 w-8 rounded-full object-cover" />
+            ) : <span className={`h-8 w-8 rounded-full ${swatchClass}`}></span>}
             <span>{variant.label}</span>
           </button>
         );
