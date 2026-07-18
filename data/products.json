@@ -6,13 +6,13 @@
       "description": "The clearest Wyze Cam ever made.",
       "price": 27.98,
       "compareAt": 35.98,
-      "badge": "Save 22%",
+      "discount": 12,
       "category": "cameras",
       "image": "/products/image-13.png",
       "variants": [
-        { "id": "white", "label": "White" },
-        { "id": "grey", "label": "Grey" },
-        { "id": "black", "label": "Black" }
+        { "id": "white", "label": "White" ,"image": "/products/image 16.png"},
+        { "id": "grey", "label": "Grey" ,"image": "/products/image 17.png"},
+        { "id": "black", "label": "Black" ,"image": "/products/image 18.png"}
       ]
     },
     {
@@ -21,13 +21,12 @@
       "description": "The clearest Wyze Cam ever made.",
       "price": 27.98,
       "compareAt": 35.98,
-      "badge": "Save 22%",
+      "discount": 22,
       "category": "cameras",
       "image": "/products/image-13.png",
       "variants": [
-        { "id": "white", "label": "White" },
-        { "id": "grey", "label": "Grey" },
-        { "id": "black", "label": "Black" }
+        { "id": "white", "label": "White", "image": "/products/image 19.png" },
+        { "id": "grey", "label": "Grey", "image": "/products/image 18.png" }
       ]
     },
     {
@@ -35,14 +34,11 @@
       "title": "Wyze Cam v4",
       "description": "The clearest Wyze Cam ever made we now.",
       "price": 27.98,
-      "compareAt": 35.98,
-
       "category": "cameras",
       "image": "/products/image-16.png",
       "variants": [
-        { "id": "white", "label": "White" },
-        { "id": "grey", "label": "Grey" },
-        { "id": "black", "label": "Black" }
+        { "id": "white", "label": "White", "image": "/products/image 16.png" },
+        { "id": "grey", "label": "Grey", "image": "/products/image 17.png" }
       ]
     },
     {
@@ -50,13 +46,10 @@
       "title": "Wyze Cam v4",
       "description": "The clearest Wyze Cam ever made.",
       "price": 27.98,
-      "compareAt": 35.98,
       "category": "cameras",
       "image": "/products/image-110.png",
       "variants": [
-        { "id": "white", "label": "White" },
-        { "id": "grey", "label": "Grey" },
-        { "id": "black", "label": "Black" }
+  
       ]
     },
     {
@@ -65,12 +58,12 @@
       "description": "Pan, tilt, and watch the whole room.",
       "price": 39.99,
       "compareAt": 49.99,
-      "badge": "Save 20%",
+      "discount": 10,
       "category": "cameras",
       "image": "/products/image-112.png",
       "variants": [
-        { "id": "white", "label": "White" },
-        { "id": "black", "label": "Black" }
+        { "id": "black", "label": "White" },
+        { "id": "grey", "label": "Grey", "image": "/products/image-13.png" }
       ]
     }
   ],
@@ -78,17 +71,20 @@
     {
       "id": "cam-unlimited",
       "title": "Cam Unlimited",
-      "description": "Unlimited camera monitoring plan.",
-      "price": 8.99,
-      "compareAt": 12.99,
+      "description": "Unlimited cloud recording and 24/7 camera access for your whole home.",
+      "price": 9.99,
+      "compareAt": 14.99,
+      "discount": 33,
       "category": "plan",
       "image": "/products/image-13.png"
     },
     {
       "id": "cam-plus",
       "title": "Cam Plus",
-      "description": "Smart alerts and video history.",
+      "description": "Smart alerts, event video history, and person detection for your cameras.",
       "price": 14.99,
+      "compareAt": 19.99,
+      "discount": 25,
       "category": "plan",
       "image": "/products/image-13.png"
     }
@@ -97,16 +93,20 @@
     {
       "id": "motion-sensor",
       "title": "Wyze Sense Motion Sensor",
-      "description": "Detects motion instantly.",
+      "description": "Detects motion instantly and triggers alerts when movement is spotted.",
       "price": 29.99,
+      "compareAt": 39.99,
+      "discount": 25,
       "category": "sensors",
       "image": "/products/image-16.png"
     },
     {
       "id": "entry-sensor",
       "title": "Wyze Entry Sensor",
-      "description": "Know when a door or window opens.",
+      "description": "Know the moment a door or window opens so you can respond quickly.",
       "price": 19.99,
+      "compareAt": 24.99,
+      "discount": 20,
       "category": "sensors",
       "image": "/products/image-16.png"
     }
@@ -115,16 +115,20 @@
     {
       "id": "sd-card",
       "title": "Wyze MicroSD Card (256GB)",
-      "description": "Extra storage for your cameras.",
+      "description": "Add reliable local storage for continuous recording and easy playback.",
       "price": 41.96,
+      "compareAt": 49.99,
+      "discount": 16,
       "category": "accessories",
       "image": "/products/image-110.png"
     },
     {
       "id": "power-adapter",
       "title": "Wyze Outdoor Power Adapter",
-      "description": "Reliable power for outdoor setups.",
+      "description": "Keep your outdoor camera setup powered reliably in any weather.",
       "price": 24.99,
+      "compareAt": 29.99,
+      "discount": 17,
       "category": "accessories",
       "image": "/products/image-112.png"
     }

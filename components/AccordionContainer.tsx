@@ -49,7 +49,7 @@ export default function AccordionContainer() {
             onNext={() => setActiveStep(stepNumber + 1)}
             nextLabel={stepNumber < steps.length ? `Next: ${steps[stepNumber].title}` : undefined}
           >
-         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 3xl:grid-cols-5">
+         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-5 3xl:grid-cols-5">
               {products[step.category as keyof typeof products].map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}

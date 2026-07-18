@@ -3,6 +3,7 @@ import products from '../data/products.json';
 export type ProductVariant = {
   id: string;
   label: string;
+  image?: string;
 };
 
 export type Product = {
@@ -11,7 +12,7 @@ export type Product = {
   description: string;
   price: number;
   compareAt?: number;
-  badge?: string;
+  discount?: number;
   category: string;
   image: string;
   variants?: ProductVariant[];

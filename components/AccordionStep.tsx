@@ -30,7 +30,7 @@ export default function AccordionStep({
         <div className="flex items-center gap-3">
          
           <div>
-            <p className="text-[12px] font-medium uppercase tracking-[0.24em] text-[#64748B]">Step {stepNumber} of 4</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#64748B]">Step {stepNumber} of 4</p>
             <div className="flex items-center gap-2">
               {iconSrc ? (
                 <img src={iconSrc} alt="" aria-hidden="true" className="h-4 w-4 shrink-0 object-contain" />
