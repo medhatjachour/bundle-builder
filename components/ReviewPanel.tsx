@@ -188,7 +188,7 @@ export default function ReviewPanel() {
                   "Your system is saved locally for your next visit.",
                 );
               }}
-              className="w-full text-sm font-semibold text-[#4A6CF6] hover:underline"
+              className="w-full text-[18px] font-normal italic tracking-[0.02em] text-[#484848] hover:underline"
             >
               {saved ? "Saved locally ✓" : "Save my system for later"}
             </button>
